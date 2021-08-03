@@ -21,7 +21,7 @@ from store.serializers import *
 #     def get(self, request, format=None):
 #         return Response(data={"MSG": "API WORKING FINE..."})
 
-def serve_frontend(request):
+def ServeReactFrontend(request):
     return render(request, 'index.html')
 
 class LoginView(APIView):

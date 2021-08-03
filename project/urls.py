@@ -15,10 +15,10 @@ Including another URLconf
 """
 
 from django.urls import path, include
-from store.views import serve_frontend
+from store.views import ServeReactFrontend
 
 urlpatterns = [
-    path('', serve_frontend),
+    path('', ServeReactFrontend),
     path('api/store/', include('store.urls')),
     path('api/medicine/', include('medicines.urls')),
 ]
